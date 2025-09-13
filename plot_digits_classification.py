@@ -68,10 +68,10 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # Learn the digits on the train subset
-svm_clf.fit(X_train, y_train)
+clf.fit(X_train, y_train)
 
 # Predict the value of the digit on the test subset
-predicted = svm_clf.predict(X_test)
+predicted = clf.predict(X_test)
 
 ###############################################################################
 # Below we visualize the first 4 test samples and show their predicted
@@ -128,9 +128,4 @@ print(
 )
 
 
-########################################################################
-from joblib import dump, load
-best_model_path = './best_model.joblib'
-dump(clf,best_model_path)
-best_model = load(best_model_path)
-print("best_model_loaded")
+
