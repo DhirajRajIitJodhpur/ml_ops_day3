@@ -89,7 +89,6 @@ for ax, image, prediction in zip(axes, X_test, predicted):
 # the main classification metrics.
 
 print(
-    f"Classification report for classifier {clf}:\n"
     f"{metrics.classification_report(y_test, predicted)}\n"
 )
 
