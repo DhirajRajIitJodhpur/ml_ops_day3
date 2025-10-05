@@ -89,7 +89,6 @@ for ax, image, prediction in zip(axes, X_test, predicted):
 # the main classification metrics.
 
 print(
-    f"Classification report for classifier {clf}:\n"
     f"{metrics.classification_report(y_test, predicted)}\n"
 )
 
@@ -131,6 +130,6 @@ print(
 ########################################################################
 from joblib import dump, load
 best_model_path = './best_model.joblib'
-dump(clf,best_model_path)
+#dump(clf,best_model_path)
 best_model = load(best_model_path)
 print("best_model_loaded")
