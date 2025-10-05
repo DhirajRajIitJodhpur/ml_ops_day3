@@ -28,6 +28,9 @@ jobs:
       - name: Install dep
         run: pip3 install --no-cache-dir -r requirements.txt
 
+      - ⁠name: Run tests
+        run: pytest
+
       - name: Run experiment
         run: python plot_digits_classification.py
 
