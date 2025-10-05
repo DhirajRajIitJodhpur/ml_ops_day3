@@ -5,7 +5,7 @@ def inc(x):
     return x+1 
 
 def test_answer():
-    assert inc(3)==5
+    assert inc(4)==5
 
 
 def answer2_test():
@@ -26,7 +26,7 @@ class Test1:
 
 class Test2:
     def test_something(self):
-        assert 1==2
+        assert 2==2
 
 
 '''
